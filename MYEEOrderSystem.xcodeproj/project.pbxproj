@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		6FBFDE912C82936000BFECE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FBFDE722C82935E00BFECE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FBFDE792C82935E00BFECE1;
+			remoteInfo = MYEEOrderSystem;
+		};
+		6FBFDE9B2C82936000BFECE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FBFDE722C82935E00BFECE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6FBFDE792C82935E00BFECE1;
+			remoteInfo = MYEEOrderSystem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FBFDE7A2C82935E00BFECE1 /* MYEEOrderSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MYEEOrderSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBFDE902C82936000BFECE1 /* MYEEOrderSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYEEOrderSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FBFDE9A2C82936000BFECE1 /* MYEEOrderSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MYEEOrderSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		6FBFDEA22C82936000BFECE1 /* Exceptions for "MYEEOrderSystem" folder in "MYEEOrderSystem" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 6FBFDE792C82935E00BFECE1 /* MYEEOrderSystem */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6FBFDE7C2C82935E00BFECE1 /* MYEEOrderSystem */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				6FBFDEA22C82936000BFECE1 /* Exceptions for "MYEEOrderSystem" folder in "MYEEOrderSystem" target */,
+			);
+			path = MYEEOrderSystem;
+			sourceTree = "<group>";
+		};
+		6FBFDE932C82936000BFECE1 /* MYEEOrderSystemTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MYEEOrderSystemTests;
+			sourceTree = "<group>";
+		};
+		6FBFDE9D2C82936000BFECE1 /* MYEEOrderSystemUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MYEEOrderSystemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6FBFDE772C82935E00BFECE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE8D2C82936000BFECE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE972C82936000BFECE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6FBFDE712C82935E00BFECE1 = {
+			isa = PBXGroup;
+			children = (
+				6FBFDE7C2C82935E00BFECE1 /* MYEEOrderSystem */,
+				6FBFDE932C82936000BFECE1 /* MYEEOrderSystemTests */,
+				6FBFDE9D2C82936000BFECE1 /* MYEEOrderSystemUITests */,
+				6FBFDE7B2C82935E00BFECE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6FBFDE7B2C82935E00BFECE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FBFDE7A2C82935E00BFECE1 /* MYEEOrderSystem.app */,
+				6FBFDE902C82936000BFECE1 /* MYEEOrderSystemTests.xctest */,
+				6FBFDE9A2C82936000BFECE1 /* MYEEOrderSystemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6FBFDE792C82935E00BFECE1 /* MYEEOrderSystem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBFDEA32C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystem" */;
+			buildPhases = (
+				6FBFDE762C82935E00BFECE1 /* Sources */,
+				6FBFDE772C82935E00BFECE1 /* Frameworks */,
+				6FBFDE782C82935E00BFECE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				6FBFDE7C2C82935E00BFECE1 /* MYEEOrderSystem */,
+			);
+			name = MYEEOrderSystem;
+			packageProductDependencies = (
+			);
+			productName = MYEEOrderSystem;
+			productReference = 6FBFDE7A2C82935E00BFECE1 /* MYEEOrderSystem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FBFDE8F2C82936000BFECE1 /* MYEEOrderSystemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBFDEA82C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystemTests" */;
+			buildPhases = (
+				6FBFDE8C2C82936000BFECE1 /* Sources */,
+				6FBFDE8D2C82936000BFECE1 /* Frameworks */,
+				6FBFDE8E2C82936000BFECE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FBFDE922C82936000BFECE1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6FBFDE932C82936000BFECE1 /* MYEEOrderSystemTests */,
+			);
+			name = MYEEOrderSystemTests;
+			packageProductDependencies = (
+			);
+			productName = MYEEOrderSystemTests;
+			productReference = 6FBFDE902C82936000BFECE1 /* MYEEOrderSystemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6FBFDE992C82936000BFECE1 /* MYEEOrderSystemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FBFDEAB2C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystemUITests" */;
+			buildPhases = (
+				6FBFDE962C82936000BFECE1 /* Sources */,
+				6FBFDE972C82936000BFECE1 /* Frameworks */,
+				6FBFDE982C82936000BFECE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FBFDE9C2C82936000BFECE1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6FBFDE9D2C82936000BFECE1 /* MYEEOrderSystemUITests */,
+			);
+			name = MYEEOrderSystemUITests;
+			packageProductDependencies = (
+			);
+			productName = MYEEOrderSystemUITests;
+			productReference = 6FBFDE9A2C82936000BFECE1 /* MYEEOrderSystemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6FBFDE722C82935E00BFECE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					6FBFDE792C82935E00BFECE1 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					6FBFDE8F2C82936000BFECE1 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 6FBFDE792C82935E00BFECE1;
+					};
+					6FBFDE992C82936000BFECE1 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 6FBFDE792C82935E00BFECE1;
+					};
+				};
+			};
+			buildConfigurationList = 6FBFDE752C82935E00BFECE1 /* Build configuration list for PBXProject "MYEEOrderSystem" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6FBFDE712C82935E00BFECE1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 6FBFDE7B2C82935E00BFECE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6FBFDE792C82935E00BFECE1 /* MYEEOrderSystem */,
+				6FBFDE8F2C82936000BFECE1 /* MYEEOrderSystemTests */,
+				6FBFDE992C82936000BFECE1 /* MYEEOrderSystemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6FBFDE782C82935E00BFECE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE8E2C82936000BFECE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE982C82936000BFECE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6FBFDE762C82935E00BFECE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE8C2C82936000BFECE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FBFDE962C82936000BFECE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FBFDE922C82936000BFECE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FBFDE792C82935E00BFECE1 /* MYEEOrderSystem */;
+			targetProxy = 6FBFDE912C82936000BFECE1 /* PBXContainerItemProxy */;
+		};
+		6FBFDE9C2C82936000BFECE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6FBFDE792C82935E00BFECE1 /* MYEEOrderSystem */;
+			targetProxy = 6FBFDE9B2C82936000BFECE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6FBFDEA42C82936000BFECE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MYEEOrderSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6FBFDEA52C82936000BFECE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MYEEOrderSystem/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FBFDEA62C82936000BFECE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6FBFDEA72C82936000BFECE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6FBFDEA92C82936000BFECE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYEEOrderSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MYEEOrderSystem";
+			};
+			name = Debug;
+		};
+		6FBFDEAA2C82936000BFECE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MYEEOrderSystem.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MYEEOrderSystem";
+			};
+			name = Release;
+		};
+		6FBFDEAC2C82936000BFECE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYEEOrderSystem;
+			};
+			name = Debug;
+		};
+		6FBFDEAD2C82936000BFECE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Centertek.MYEEOrderSystemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MYEEOrderSystem;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6FBFDE752C82935E00BFECE1 /* Build configuration list for PBXProject "MYEEOrderSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBFDEA62C82936000BFECE1 /* Debug */,
+				6FBFDEA72C82936000BFECE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBFDEA32C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBFDEA42C82936000BFECE1 /* Debug */,
+				6FBFDEA52C82936000BFECE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBFDEA82C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBFDEA92C82936000BFECE1 /* Debug */,
+				6FBFDEAA2C82936000BFECE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FBFDEAB2C82936000BFECE1 /* Build configuration list for PBXNativeTarget "MYEEOrderSystemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FBFDEAC2C82936000BFECE1 /* Debug */,
+				6FBFDEAD2C82936000BFECE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6FBFDE722C82935E00BFECE1 /* Project object */;
+}
