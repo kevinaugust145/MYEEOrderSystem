@@ -1,24 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23091" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH6-5B-Quh">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23079"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--最新活動-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="最新活動" id="d4R-jZ-kE8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1660" y="-268"/>
+        </scene>
+        <!--最新活動-->
+        <scene sceneID="7Es-Xz-IRV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JeJ-D1-xXz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="最新活動" image="trash.square.fill" catalog="system" id="SWO-0A-w1g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S0A-uB-6EQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4wr-21-D7h"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMo-cZ-UpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944" y="-268"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="CbS-tz-9sM">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="YH6-5B-Quh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="F9p-2G-Mb5">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Lc8-Ze-EUU" kind="relationship" relationship="viewControllers" id="PHe-25-JWQ"/>
+                        <segue destination="JeJ-D1-xXz" kind="relationship" relationship="viewControllers" id="Gui-ph-f0g"/>
+                        <segue destination="LyS-vw-DVM" kind="relationship" relationship="viewControllers" id="eQn-3s-T2J"/>
+                        <segue destination="SNo-Xy-JJC" kind="relationship" relationship="viewControllers" id="xBG-ss-GZm"/>
+                        <segue destination="CQi-Sn-3jS" kind="relationship" relationship="viewControllers" id="NpI-XZ-8qk"/>
+                        <segue destination="1PJ-fc-0zM" kind="relationship" relationship="viewControllers" id="WLJ-BI-kjJ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnn-lw-JkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="171.75572519083968" y="44.366197183098592"/>
+        </scene>
+        <!--我要訂餐-->
+        <scene sceneID="d4y-Ie-p8t">
+            <objects>
+                <viewController id="Ldw-hg-e2Q" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="znb-bR-iFc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-fX-A7I">
+                                <rect key="frame" x="57" y="120" width="278" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="麵疙瘩">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="02t-Ki-yMz" kind="show" id="bUA-Vk-QW1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0un-lY-kiQ">
+                                <rect key="frame" x="57" y="218" width="278" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="麵類">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFg-9O-b0t">
+                                <rect key="frame" x="57" y="316" width="278" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="飯類">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Z6-z6-C8b">
+                                <rect key="frame" x="57" y="414" width="278" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="湯類">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67c-gy-rcV">
+                                <rect key="frame" x="57" y="512" width="278" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="小菜">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CMe-ID-fCp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我要訂餐" id="Cdh-Ph-Fm5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbf-Ns-p6f" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658.7786259541983" y="455.63380281690144"/>
+        </scene>
+        <!--麵疙瘩-->
+        <scene sceneID="uOI-Lz-ZGj">
+            <objects>
+                <viewController id="02t-Ki-yMz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wjK-Wx-FEz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ezA-Ny-zw1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="麵疙瘩" id="dW6-Zo-EHc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0tp-cu-Zd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2387" y="465"/>
+        </scene>
+        <!--訂餐-->
+        <scene sceneID="5dG-By-brc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LyS-vw-DVM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="訂餐" image="square.and.arrow.up.circle" catalog="system" id="s8X-IN-caS"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5IJ-ZS-HR9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ldw-hg-e2Q" kind="relationship" relationship="rootViewController" id="xxL-Gn-aIE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzB-TC-07O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="456"/>
+        </scene>
+        <!--滿姨麵疙瘩訂餐系統-->
+        <scene sceneID="ae4-gh-mqH">
+            <objects>
+                <viewController id="h6X-Yv-Inl" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s0Z-BH-hb4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="oMr-fq-Usb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="滿姨麵疙瘩訂餐系統" id="2u3-zu-2rm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FI5-DN-LMv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="1152"/>
+        </scene>
+        <!--首頁-->
+        <scene sceneID="uGB-YH-87W">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lc8-Ze-EUU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首頁" image="house.badge.wifi.fill" catalog="system" id="iiY-YK-aQX"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SM3-70-inI">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="h6X-Yv-Inl" kind="relationship" relationship="rootViewController" id="gyO-xH-Quk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tnO-zB-ax3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="1152"/>
+        </scene>
+        <!--採購車-->
+        <scene sceneID="VD4-UD-X9K">
+            <objects>
+                <viewController id="52B-6F-TN2" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5nu-CH-HMX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ocx-kM-uRB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="採購車" id="mqB-o1-VZG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jpt-FF-Rai" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="1859"/>
+        </scene>
+        <!--採購車-->
+        <scene sceneID="b3x-Pg-wO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SNo-Xy-JJC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="採購車" image="cart.fill.badge.plus" catalog="system" id="Fcx-Nr-JJ5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aju-Pl-Bfj">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="52B-6F-TN2" kind="relationship" relationship="rootViewController" id="Oe7-LH-uJZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQj-XI-Nl3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="1859"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zhG-Hx-awt">
+            <objects>
+                <viewController id="SlF-ci-wAm" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ae1-6V-ZCw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="KQK-4g-EuF"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Aa1-Hz-q8L"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUp-u2-4AB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="2686"/>
+        </scene>
+        <!--採購車-->
+        <scene sceneID="L7I-kB-Nkg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3tQ-J8-UvP" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="採購車" image="cart.fill.badge.plus" catalog="system" id="MO9-Ry-Zge"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tDb-7m-h8c">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SlF-ci-wAm" kind="relationship" relationship="rootViewController" id="PEB-Oi-jy5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcA-9E-5dH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="2686"/>
+        </scene>
+        <!--我的資訊-->
+        <scene sceneID="WHp-AF-hor">
+            <objects>
+                <viewController id="SFa-4i-wH2" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sOA-bH-A33">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Icp-8q-FGq"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的資訊" id="Qig-Tc-2uC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Exb-z1-aU1" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="2686"/>
+        </scene>
+        <!--我的資訊-->
+        <scene sceneID="iOj-3W-VGF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CQi-Sn-3jS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="我的資訊" image="info" catalog="system" id="dSL-5z-9ub"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o3Q-v4-sWK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SFa-4i-wH2" kind="relationship" relationship="rootViewController" id="Vtc-vc-g1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hd4-lo-O7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="2686"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Tco-Ah-q6K">
+            <objects>
+                <viewController id="8jc-io-cwe" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eXY-ap-7QS">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="wbj-HW-7Ut"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BHq-Kw-JVA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GTe-Ox-XRq" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="3380"/>
+        </scene>
+        <!--採購車-->
+        <scene sceneID="kfx-fm-ggf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YiJ-Zx-tNz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="採購車" image="cart.fill.badge.plus" catalog="system" id="tOw-kC-wpg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eWB-Zz-ZKH">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8jc-io-cwe" kind="relationship" relationship="rootViewController" id="KcH-O7-6sx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gce-Tb-0MJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="3380"/>
+        </scene>
+        <!--我的資訊-->
+        <scene sceneID="t5h-t1-AdI">
+            <objects>
+                <viewController id="tcx-TU-b85" customClass="ViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CjS-Ya-ZEX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="U8G-li-eEX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="我的資訊" id="WNY-ge-i8G"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFk-ea-LYD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1659" y="3380"/>
+        </scene>
+        <!--門市資訊-->
+        <scene sceneID="vS8-xc-vg9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1PJ-fc-0zM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="門市資訊" image="mappin.and.ellipse" catalog="system" id="s6o-UV-geg"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="atq-UX-GHz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tcx-TU-b85" kind="relationship" relationship="rootViewController" id="8ie-nr-ZqE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zdm-tI-sIk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="943" y="3380"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cart.fill.badge.plus" catalog="system" width="128" height="106"/>
+        <image name="house.badge.wifi.fill" catalog="system" width="128" height="112"/>
+        <image name="info" catalog="system" width="93" height="128"/>
+        <image name="mappin.and.ellipse" catalog="system" width="110" height="128"/>
+        <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
+        <image name="trash.square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
