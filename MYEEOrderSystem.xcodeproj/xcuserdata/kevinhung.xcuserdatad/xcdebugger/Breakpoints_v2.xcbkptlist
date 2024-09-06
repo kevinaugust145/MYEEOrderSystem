@@ -3,4 +3,114 @@
    uuid = "2D5AE5C3-75C5-4041-B346-FF946C254B95"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C5D6C1B6-20DB-4B2C-985F-213DE47841B9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYEEOrderSystem/MenuTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4B1016E9-1550-40DD-8DA7-A90E803644EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYEEOrderSystem/OrderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "navigateToMenu(type:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4B1016E9-1550-40DD-8DA7-A90E803644EB - 6bfcbc71b1fc27e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MYEEOrderSystem.OrderViewController.navigateToMenu(type: Swift.String) -&gt; ()"
+                  moduleName = "MYEEOrderSystem.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinhung/Documents/MYEEOrderSystem/MYEEOrderSystem/OrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68">
+               </Location>
+               <Location
+                  uuid = "4B1016E9-1550-40DD-8DA7-A90E803644EB - 6bfcbc71b1fc278c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MYEEOrderSystem.OrderViewController.navigateToMenu(type: Swift.String) -&gt; ()"
+                  moduleName = "MYEEOrderSystem.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinhung/Documents/MYEEOrderSystem/MYEEOrderSystem/OrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2492880F-FB97-4DED-AB35-729876B895C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MYEEOrderSystem/OrderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "navigateToMenu(type:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2492880F-FB97-4DED-AB35-729876B895C1 - 6bfcbc71b1fc246d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MYEEOrderSystem.OrderViewController.navigateToMenu(type: Swift.String) -&gt; ()"
+                  moduleName = "MYEEOrderSystem.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinhung/Documents/MYEEOrderSystem/MYEEOrderSystem/OrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64">
+               </Location>
+               <Location
+                  uuid = "2492880F-FB97-4DED-AB35-729876B895C1 - 6bfcbc71b1fc278c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MYEEOrderSystem.OrderViewController.navigateToMenu(type: Swift.String) -&gt; ()"
+                  moduleName = "MYEEOrderSystem.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kevinhung/Documents/MYEEOrderSystem/MYEEOrderSystem/OrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -12,15 +12,15 @@ class OrderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-  
-    func displayMenu(menu: Menu) {
-          // 顯示餐廳名稱
-          self.title = menu.restaurant.name
+        downloadMenu()
+//    func displayMenu(menu: Menu) {
+//          // 顯示餐廳名稱
+//          self.title = menu.restaurant.name
           
           // 你可以將餐廳資料顯示在 UI 元素上，例如 UILabel, UITableView 等
           // 使用例如: menu.restaurant.menu.noodles, menu.restaurant.menu.sideDishes
           // 來存取菜單資料並顯示在對應的 UI 上
-      }
+//      }
     
     func downloadMenu() {
         let urlString =
@@ -36,7 +36,7 @@ class OrderViewController: UIViewController {
                    
                    let decoder = JSONDecoder()
    
-                   let menu = try decoder.decode(Menu.self, from: data)
+                   _ = try decoder.decode(Menu.self, from: data)
             
                } catch {
                    print("Failed to decode JSON: \(error.localizedDescription)")
@@ -53,10 +53,16 @@ class OrderViewController: UIViewController {
         navigateToMenu(type: "noodles")
     }
     
+    @IBAction func showSideDishes(_ sender: Any) {
+        navigateToMenu(type: "sideDishes")
+    }
     func navigateToMenu(type: String){
-        let storyboard = UIStoryboard(name: "OrderViewController", bundle: nil)
-        if let menuVC = storyboard.instantiateViewController(identifier: "MenuTableViewController") as?MenuTableViewController{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let menuVC = storyboard.instantiateViewController(identifier: "MenuTableViewController") as? MenuTableViewController{
             menuVC.menu = menu
+            menuVC.menuType = type
+            
+            self.navigationController?.pushViewController(menuVC, animated: true)
             
             
         }

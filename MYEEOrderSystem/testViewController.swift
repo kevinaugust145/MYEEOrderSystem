@@ -9,6 +9,7 @@ import UIKit
 
 class testViewController: UIViewController {
 
+    @IBOutlet weak var viewtable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

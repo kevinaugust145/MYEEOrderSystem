@@ -9,6 +9,8 @@ import UIKit
 
 class MenuTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableview: UITableView!
+    
     var menu: Menu?
     var menuType: String?
     var items: [Any] = []
@@ -17,6 +19,7 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        loadMenuItems()
         // Do any additional setup after loading the view.
     }
     
@@ -34,9 +37,25 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath)
         
+        if menuType == "noodles" {
+            let noodle = items[indexPath.row] as! Noodle
+            cell.textLabel?.text = noodle.name
+            cell.detailTextLabel?.text = "價格： 小 \(noodle.price.small) 大 \(noodle.price.large)"
+            
+        } else if menuType == "sideDishes" {
+            let sideDish = items[indexPath.row] as! SideDish
+            cell.textLabel?.text = sideDish.name
+            cell.detailTextLabel?.text = "價格 \(sideDish.price)"
+        }
+        
+        return cell
     }
 
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     /*
     // MARK: - Navigation
 

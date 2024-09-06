@@ -97,6 +97,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="小菜">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="showSideDishes:" destination="Ldw-hg-e2Q" eventType="touchUpInside" id="WBT-6g-sPs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-fX-A7I">
                                 <rect key="frame" x="57" y="177" width="278" height="90"/>
@@ -107,7 +110,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showNoodles:" destination="Ldw-hg-e2Q" eventType="touchUpInside" id="ekR-43-nEt"/>
-                                    <segue destination="02t-Ki-yMz" kind="show" id="bUA-Vk-QW1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -122,7 +124,7 @@
         <!--麵疙瘩-->
         <scene sceneID="uOI-Lz-ZGj">
             <objects>
-                <viewController id="02t-Ki-yMz" customClass="MenuTableViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="02t-Ki-yMz" customClass="MenuTableViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wjK-Wx-FEz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,12 +133,44 @@
                                 <rect key="frame" x="24" y="134" width="353" height="591"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="T82-EK-syK" detailTextLabel="fuJ-kA-nDZ" style="IBUITableViewCellStyleSubtitle" id="1oi-i9-xN7">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1oi-i9-xN7" id="lbr-8I-3cV">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T82-EK-syK">
+                                                    <rect key="frame" x="20" y="6.0000000000000009" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fuJ-kA-nDZ">
+                                                    <rect key="frame" x="19.999999999999996" y="22.333333333333336" width="43.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ezA-Ny-zw1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="麵疙瘩" id="dW6-Zo-EHc"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="tableview" destination="izd-zo-w2T" id="u3v-mC-6FZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tp-cu-Zd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
