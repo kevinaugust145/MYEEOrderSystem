@@ -8,11 +8,11 @@
 import UIKit
 
 class OrderViewController: UIViewController {
-    var menu: Menu?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        downloadMenu()
+       
 //    func displayMenu(menu: Menu) {
 //          // 顯示餐廳名稱
 //          self.title = menu.restaurant.name
@@ -22,29 +22,7 @@ class OrderViewController: UIViewController {
           // 來存取菜單資料並顯示在對應的 UI 上
 //      }
     
-    func downloadMenu() {
-        let urlString =
-        "https://raw.githubusercontent.com/kevinaugust145/MYEEMenu/main/MYEEMenu.txt" // 替換成你實際的連結
-           guard let url = URL(string: urlString) else { return }
-
-           let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-               guard let data = data, error == nil else { return }
-               do {
-                   let content = String(data: data, encoding: .utf8)
-                   print(content ?? "")
-                   
-                   
-                   let decoder = JSONDecoder()
-   
-                   _ = try decoder.decode(Menu.self, from: data)
-            
-               } catch {
-                   print("Failed to decode JSON: \(error.localizedDescription)")
-               }
-           }
-           task.resume()
-       }
-        
+         
     
         
     }
@@ -53,16 +31,16 @@ class OrderViewController: UIViewController {
         navigateToMenu(type: "noodles")
     }
     
-    @IBAction func showSideDishes(_ sender: Any) {
+    @IBAction func showSideDishes(_ sender: UIButton) {
         navigateToMenu(type: "sideDishes")
     }
     func navigateToMenu(type: String){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let menuVC = storyboard.instantiateViewController(identifier: "MenuTableViewController") as? MenuTableViewController{
-            menuVC.menu = menu
+           
             menuVC.menuType = type
-            
-            self.navigationController?.pushViewController(menuVC, animated: true)
+        
+           
             
             
         }

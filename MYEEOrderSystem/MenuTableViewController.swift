@@ -18,18 +18,58 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        loadMenuItems()
+        tableview.delegate = self
+        tableview.dataSource = self
+        downloadMenu()
+        
         // Do any additional setup after loading the view.
     }
-    
+ 
+    func downloadMenu() {
+        let urlString =
+        "https://raw.githubusercontent.com/kevinaugust145/MYEEMenu/main/MYEEMenu.txt" // 替換成你實際的連結
+           guard let url = URL(string: urlString) else { return }
+
+           let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+               guard let data = data, error == nil else {
+                   print("Failed to fetch data")
+                   return }
+               do {
+                   let content = String(data: data, encoding: .utf8)
+                   print(content ?? "")
+                   
+                   
+                   let decoder = JSONDecoder()
+   
+                   self.menu = try decoder.decode(Menu.self, from: data)
+                   DispatchQueue.main.async {
+                       self.loadMenuItems()
+                   }
+            
+               } catch {
+                   print("Failed to decode JSON: \(error.localizedDescription)")
+               }
+           }
+           task.resume()
+       }
+
     func loadMenuItems() {
-        if menuType == "noodles", let noodles = menu?.restaurant.menu.noodles{
-            items = noodles
-        } else if menuType == "sideDishes", let sideDishes = menu?.restaurant.menu.sideDishes {
-            items = sideDishes
+        guard let menu = menu else {
+            print("Menu is nil")
+            return }
+        
+        if menuType == "noodles" {
+            print(menu.restaurant.menu.noodles)
+            items = menu.restaurant.menu.noodles
         }
-        tableview.reloadData()
+         else if menuType == "sideDishes"{
+            items = menu.restaurant.menu.sideDishes
+        }
+        print("Loaded items: \(items.count)")
+        DispatchQueue.main.async {
+            self.tableview.reloadData()
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
