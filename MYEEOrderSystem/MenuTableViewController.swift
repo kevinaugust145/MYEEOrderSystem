@@ -7,22 +7,16 @@
 
 import UIKit
 
-class MenuTableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    @IBOutlet weak var tableview: UITableView!
-    
+class MenuTableViewController: UITableViewController
+{
+ 
     var menu: Menu?
     var menuType: String?
     var items: [Any] = []
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableview.delegate = self
-        tableview.dataSource = self
         downloadMenu()
-        
-        // Do any additional setup after loading the view.
     }
  
     func downloadMenu() {
@@ -42,12 +36,13 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
                    let decoder = JSONDecoder()
    
                    self.menu = try decoder.decode(Menu.self, from: data)
+ 
                    DispatchQueue.main.async {
                        self.loadMenuItems()
                    }
             
                } catch {
-                   print("Failed to decode JSON: \(error.localizedDescription)")
+                   print("Failed to decode JSON: \(error)")
                }
            }
            task.resume()
@@ -67,16 +62,17 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         print("Loaded items: \(items.count)")
         DispatchQueue.main.async {
-            self.tableview.reloadData()
+            self.tableView?.reloadData()
         }
-        
-    }
+     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("\(items.count)")
         return items.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MenuCell", for: indexPath)
         
         if menuType == "noodles" {
@@ -93,17 +89,8 @@ class MenuTableViewController: UIViewController, UITableViewDelegate, UITableVie
         return cell
     }
 
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

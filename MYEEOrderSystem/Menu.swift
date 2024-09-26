@@ -19,8 +19,9 @@ struct Restaurant: Codable {
 
 struct MenuDetails: Codable {
     let noodles: [Noodle]
+    let rice: [Rice]
     let sideDishes: [SideDish]
-    let drinks: [Drink]
+    let soup: [Soup]
 }
 
 struct Noodle: Codable {
@@ -44,6 +45,15 @@ struct Options: Codable {
     let spicyLevel: Int
 }
 
+
+
+struct Rice: Codable {
+    let id: Int
+    let name: String
+    let description: String
+    let price: Price
+    let available: Bool
+}
 struct SideDish: Codable {
     let id: Int
     let name: String
@@ -51,8 +61,7 @@ struct SideDish: Codable {
     let price: Int
     let available: Bool
 }
-
-struct Drink: Codable {
+struct Soup: Codable {
     let id: Int
     let name: String
     let description: String

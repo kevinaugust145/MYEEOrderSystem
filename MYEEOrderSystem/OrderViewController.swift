@@ -8,7 +8,7 @@
 import UIKit
 
 class OrderViewController: UIViewController {
-    
+    var selectedType : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -26,24 +26,29 @@ class OrderViewController: UIViewController {
     
         
     }
-    
+    @IBAction func selectNoodles(_ sender: UIButton) {
+  
+    }
+  
+  
     @IBAction func showNoodles(_ sender: UIButton) {
-        navigateToMenu(type: "noodles")
+        let secondVC = MenuTableViewController()
+        secondVC.menuType = "noodles"
+        navigationController?.pushViewController(secondVC, animated: true)
     }
     
     @IBAction func showSideDishes(_ sender: UIButton) {
         navigateToMenu(type: "sideDishes")
+        selectedType = "sideDishes"
     }
     func navigateToMenu(type: String){
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        if let menuVC = storyboard.instantiateViewController(identifier: "MenuTableViewController") as? MenuTableViewController{
-           
-            menuVC.menuType = type
         
-           
-            
-            
-        }
+        
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        if let menuVC = storyboard.instantiateViewController(identifier: "MenuTableViewController") as? MenuTableViewController{
+//            menuVC.menuType = type
+//            
+//        }
     }
 }
     

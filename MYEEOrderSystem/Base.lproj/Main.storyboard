@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23091" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH6-5B-Quh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH6-5B-Quh">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23079"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,7 +78,7 @@
                                 <rect key="frame" x="57" y="316" width="278" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="飯類">
+                                <buttonConfiguration key="configuration" style="filled" title="rice">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
                                 </buttonConfiguration>
                             </button>
@@ -86,7 +86,7 @@
                                 <rect key="frame" x="57" y="414" width="278" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="湯類">
+                                <buttonConfiguration key="configuration" style="filled" title="soup">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
                                 </buttonConfiguration>
                             </button>
@@ -94,7 +94,7 @@
                                 <rect key="frame" x="57" y="512" width="278" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="小菜">
+                                <buttonConfiguration key="configuration" style="filled" title="sideDishes">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -105,12 +105,11 @@
                                 <rect key="frame" x="57" y="177" width="278" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="麵疙瘩/麵類">
+                                <buttonConfiguration key="configuration" style="filled" title="noodles">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="showNoodles:" destination="Ldw-hg-e2Q" eventType="touchUpInside" id="ekR-43-nEt"/>
-                                    <segue destination="02t-Ki-yMz" kind="show" id="Rse-f8-P8E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,57 +120,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qbf-Ns-p6f" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1658.7786259541983" y="455.63380281690144"/>
-        </scene>
-        <!--麵疙瘩-->
-        <scene sceneID="uOI-Lz-ZGj">
-            <objects>
-                <viewController storyboardIdentifier="MenuTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="02t-Ki-yMz" customClass="MenuTableViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wjK-Wx-FEz">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="izd-zo-w2T">
-                                <rect key="frame" x="24" y="134" width="353" height="591"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" textLabel="T82-EK-syK" style="IBUITableViewCellStyleDefault" id="1oi-i9-xN7">
-                                        <rect key="frame" x="0.0" y="50" width="353" height="43.666667938232422"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1oi-i9-xN7" id="lbr-8I-3cV">
-                                            <rect key="frame" x="0.0" y="0.0" width="353" height="43.666667938232422"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T82-EK-syK">
-                                                    <rect key="frame" x="20" y="0.0" width="313" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="wjK-Wx-FEz" id="M3c-GU-O8F"/>
-                                    <outlet property="delegate" destination="wjK-Wx-FEz" id="oBF-o2-W4e"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ezA-Ny-zw1"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="麵疙瘩" id="dW6-Zo-EHc"/>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
-                    </userDefinedRuntimeAttributes>
-                    <connections>
-                        <outlet property="tableview" destination="izd-zo-w2T" id="u3v-mC-6FZ"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0tp-cu-Zd2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2385.4961832061067" y="464.78873239436621"/>
         </scene>
         <!--訂餐-->
         <scene sceneID="5dG-By-brc">
@@ -397,6 +345,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdm-tI-sIk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="943" y="3380"/>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="97k-4v-7wc">
+            <objects>
+                <tableViewController id="Kt5-Ya-fQq" customClass="MenuTableViewController" customModule="MYEEOrderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="CIE-Nf-7J4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NameCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" textLabel="BDc-CI-vpz" style="IBUITableViewCellStyleDefault" id="ONo-YP-DgW">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ONo-YP-DgW" id="GKx-88-yqP">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BDc-CI-vpz">
+                                            <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kt5-Ya-fQq" id="MfU-wW-wSG"/>
+                            <outlet property="delegate" destination="Kt5-Ya-fQq" id="Zid-IL-uap"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="x3f-d2-dQg"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CP8-8C-6YU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2642" y="479"/>
         </scene>
     </scenes>
     <resources>
